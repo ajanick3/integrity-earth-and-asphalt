@@ -1,21 +1,22 @@
 import React from 'react'
-
 import Footer from './Footer'
-import avatar from '../assets/images/avatar.jpg'
+// import avatar from '../assets/images/avatar.jpg'
+
+const servicesList = ['Excavating', 'Asphalt', 'Outdoors', 'Snow']
 
 const Header = () => {
   return (
     <header id='header'>
       <div className='inner'>
         <a href='#' className='image avatar'>
-          <img src={avatar} alt='' />
+          {/* <img src={avatar} alt='' /> */}
         </a>
         <h1>
-          <strong>I am Strata</strong>, a super simple
-          <br />
-          responsive site template freebie
-          <br />
-          crafted by <a href='http://html5up.net'>HTML5 UP</a>.
+          <ul style={{ listStyle: 'none' }}>
+            {servicesList.map((service, i) => (
+              <li key={`service-${i}`}>{service}</li>
+            ))}
+          </ul>
         </h1>
       </div>
       <Footer />
