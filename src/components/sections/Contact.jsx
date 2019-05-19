@@ -43,9 +43,10 @@ const Contact = (props) => {
                 <h3 className='icon fa-home'>
                   <span className='label'>Address</span>
                 </h3>
-                <a href={props.addressLink} target='_blank'>
+                {props.address}
+                {/* <a href={props.addressLink} target='_blank'>
                   {props.address}
-                </a>
+                </a> */}
               </li>
               <li>
                 <h3 className='icon fa-mobile'>
