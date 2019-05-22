@@ -7,7 +7,7 @@ const Contact = (props) => {
         <h2>{props.sectionTitle}</h2>
         <p>{props.sectionDescription}</p>
         <div className='row'>
-          <div className='8u 12u$(small)'>
+          {/* <div className='8u 12u$(small)'>
             <form method='post' action='#'>
               <div className='row uniform 50%'>
                 <div className='6u 12u$(xsmall)'>
@@ -36,7 +36,7 @@ const Contact = (props) => {
                 <input type='submit' value='Send Message' />
               </li>
             </ul>
-          </div>
+          </div> */}
           <div className='4u 12u$(small)'>
             <ul className='labeled-icons'>
               <li>
